@@ -26,7 +26,7 @@ function Header(props) {
                         </SmoothLink>
                     </li>
                     <li className={classes.nav_link}>
-                        <SmoothLink to="home" spy={true} smooth={true} offset={-60} duration={500}>
+                        <SmoothLink to="collection" spy={true} smooth={true} offset={-60} duration={500}>
                             <BiCollection/>
                             مجموعة
                         </SmoothLink>

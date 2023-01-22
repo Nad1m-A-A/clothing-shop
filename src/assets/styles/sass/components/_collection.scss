@@ -1,0 +1,70 @@
+@use './sass/variables/colors' as *;
+
+.collection {
+    background-color: $bg_color;
+    .collection_container {
+        display: grid;
+        justify-items: center;
+        row-gap: 2rem;
+        .men_collection, .women_collection {
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 2rem;
+            img {
+                width: 180px;
+            }
+        }
+        .men_collection {
+            .collection_text {
+                align-self: flex-end;
+                margin-bottom: 1rem;
+            }
+        }
+        .women_collection {
+            .collection_text {
+                margin-top: 1rem;
+            }
+        }
+        .collection_text {
+            h2 {
+                margin-bottom: 0.8rem;
+                line-height: 1.1;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .collection {
+        .collection_container {
+            position: relative;
+            column-gap: 2rem;
+            height: 571px;
+
+            .men_collection, .women_collection {
+                img {
+                    width: 250px;
+                }
+                position: absolute;
+                column-gap: 4rem;
+            }
+            .men_collection {
+                grid-template-columns: 230px max-content;
+                bottom: 1rem;
+                .collection_text {
+                    margin-right: auto;
+                }
+            }
+            .women_collection {
+                grid-template-columns: max-content 230px;
+                top: 0;
+            }
+            .collection_text {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

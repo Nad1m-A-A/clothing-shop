@@ -20,9 +20,9 @@
             }
         }
     }
-    .home {
+    .home, .collection {
         background-color: $l_bg_color;
-        h1 {
+        h1, h2 {
             color: $l_text_color-light;
         }
         a {
@@ -34,7 +34,7 @@
             }
         }
     }
-    .new {
+    .new, .products {
         h2, h3 {
             color: $l_title_color;
         }
