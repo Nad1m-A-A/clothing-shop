@@ -1,10 +1,17 @@
 
-$first-color: rgb(65, 120, 220);
-$first-color-alt: rgb(48, 107, 217);
-$title-color: rgb(241, 242, 243);
-$text-color: rgb(186, 190, 196);
-$text-color-light: rgb(136, 139, 145);
-$white-color: rgb(255, 255, 255);
-$body-color: rgb(10, 10, 11);
-$container-color: rgb(17, 18, 19);
 
+// $bg-color-light: hsl(220, 18%, 86%);
+// $container-color: hsl(220, 18%, 97%);
+
+$body_bg: hsl(220, 18%, 99%);
+$bg_color: hsl(220, 18%, 78%);
+$title-color: hsl(220, 8%, 10%);
+$text-color: hsl(220, 4%, 32%);
+$text-color-light: hsl(220, 4%, 55%);
+
+
+$l_body_bg: hsl(220, 8%, 10%);
+$l_bg_color: hsl(220, 4%, 32%);
+$l_title_color: hsl(220, 18%, 86%);
+$l_text_color: hsl(220, 18%, 78%);
+$l_text_color-light: hsl(220, 18%, 99%);

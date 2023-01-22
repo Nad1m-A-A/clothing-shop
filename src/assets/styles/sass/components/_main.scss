@@ -1,0 +1,50 @@
+@use '../variables/colors' as *;
+
+.main {
+    direction: rtl;
+}
+
+.dark {
+    img {
+        box-shadow: none;
+    }
+    background-color: $l_body_bg;
+    color: $l_text_color;
+    header {
+        background-color: $l_body_bg;
+        ul {
+            .nav_link {
+                & > * {
+                    color: $l_text_color-light;
+                }
+            }
+        }
+    }
+    .home {
+        background-color: $l_bg_color;
+        h1 {
+            color: $l_text_color-light;
+        }
+        a {
+            color: $l_text_color-light;
+        }
+        .direction {
+            & > a {
+                color: $l_title_color !important;
+            }
+        }
+    }
+    .new {
+        h2, h3 {
+            color: $l_title_color;
+        }
+    }
+}
+
+@media screen and (max-width: 699px)  {
+        .nav_link {
+            & > * {
+                color: $text-color !important;
+            }
+        }
+}

@@ -1,0 +1,85 @@
+@use '../variables/colors' as *;
+
+.home {
+    background-color: $bg-color;
+    padding-bottom: 8rem;
+    .home_container {
+        max-width: 400px;
+        margin: auto;
+        .home_text {
+            h1 {
+                font-size: 34px;
+                line-height: 1.1;
+                font-weight: 500;
+            }
+            p {
+                padding-block: 0.7rem 1rem;
+                font-weight: 600;
+            }
+            .direction {
+                max-width: 5rem;
+                & > a {
+                    color: $title-color
+                }
+            }
+        }
+        .home_images {
+            position: relative;
+            padding-top: 2rem;
+            img {
+                width: 250px;
+            }
+            .upper_img {
+                width: 180px;
+                position: absolute;
+                top: 50%;
+                right: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .home {
+        padding-bottom: 12rem;
+        .home_container {
+            .home_text {
+                h1 {
+                    font-size: 60px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .home {
+        padding-bottom: 12rem;
+        min-height: 100vh;
+        .home_container {
+            max-width: 800px;
+            display: flex;
+            column-gap: 5rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .home_text {
+            h1 {
+                font-size: 50px !important;
+            }
+            p {
+                padding-block: 2rem 1rem !important;
+            }
+        }
+        .home_images {
+            .lower_img {
+                width: 300px !important;
+            }
+            .upper_img {
+                right: -8rem !important;
+                width: 250px !important;
+            }
+        }
+    }
+}
+
