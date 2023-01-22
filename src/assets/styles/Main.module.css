@@ -120,7 +120,6 @@ header nav .mode_button_wrapper {
 }
 @media screen and (max-width: 420px) {
   header nav ul {
-    display: none;
     -webkit-column-gap: 1.5rem;
        -moz-column-gap: 1.5rem;
             column-gap: 1.5rem;
