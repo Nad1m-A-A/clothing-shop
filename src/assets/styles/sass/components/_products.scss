@@ -47,3 +47,17 @@
         }
     }
 }
+
+@media screen and (max-width: 460px) {
+    .products {
+        .products_container {
+            max-width: 350px;
+            padding-left: 1.2rem;
+            .cards_holder {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

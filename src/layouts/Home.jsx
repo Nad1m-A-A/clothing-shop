@@ -9,7 +9,7 @@ function Home() {
             <div className={classes.home_container}>
                 <div className={classes.home_text}>
                     <h1>مجموعة ملابس <br/>جديدة</h1>
-                    <p>المجموعة الأحدث للعام<br/> من أفضل الماركات العالمية</p>
+                    <p>المجموعة الأحدث للعام و<br/> من أفضل الماركات العالمية</p>
                     <div className={classes.direction}>
                         <Direction whereTo="new" content="تصفح"/>
                     </div>
