@@ -38,6 +38,9 @@
 .dark .new h2, .dark .new h3, .dark .products h2, .dark .products h3, .dark .brands h2, .dark .brands h3 {
   color: hsl(220deg, 8%, 95%);
 }
+.dark .products .arrows svg {
+  color: hsl(220deg, 8%, 95%);
+}
 .dark .footer h3 {
   color: hsl(220deg, 8%, 95%);
 }
