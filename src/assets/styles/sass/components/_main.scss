@@ -12,6 +12,9 @@
     color: $l_text_color;
     header {
         background-color: $l_body_bg;
+        .logo_wrapper, .mode_button_wrapper {
+            color: $l_text_color-light;
+        }
         ul {
             .nav_link {
                 & > * {
@@ -23,9 +26,12 @@
     .home, .collection {
         background-color: $l_bg_color;
         h1, h2 {
-            color: $l_text_color-light;
+            color: $l_title_color;
         }
         a {
+            color: $l_text_color-light;
+        }
+        p {
             color: $l_text_color-light;
         }
         .direction {
@@ -34,9 +40,20 @@
             }
         }
     }
-    .new, .products {
+    .new, .products, .brands {
         h2, h3 {
             color: $l_title_color;
+        }
+    }
+    .footer {
+        h3 {
+            color: $l_title_color;
+        }
+        img {
+            background-color: transparent !important;
+        }
+        li:hover {
+            color: $l_title_color !important;
         }
     }
 }

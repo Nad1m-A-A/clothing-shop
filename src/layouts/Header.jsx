@@ -32,7 +32,7 @@ function Header(props) {
                         </SmoothLink>
                     </li>
                     <li className={classes.nav_link}>
-                        <SmoothLink to="home" spy={true} smooth={true} offset={-60} duration={500}>
+                        <SmoothLink to="products" spy={true} smooth={true} offset={-50} duration={500}>
                         <RiTShirtLine/>
                             منتجات
                         </SmoothLink>

@@ -1,0 +1,46 @@
+@use '../variables/colors' as *;
+
+.brands {
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        padding-bottom: 3rem;
+    }
+    .brands_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        height: 22vh;
+        max-width: 700px;
+        margin: auto;
+        justify-items: center;
+        img:nth-child(1), img:nth-child(3) {
+            align-self: flex-end;
+        }
+        img {
+            width: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .brands {
+        .brands_container {
+            width: 300px;
+            height: auto;
+            row-gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .brands {
+        .brands_container {
+            width: 200px;
+            grid-template-columns: 1fr;
+        }
+    }
+}

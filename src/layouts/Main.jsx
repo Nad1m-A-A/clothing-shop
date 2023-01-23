@@ -4,6 +4,8 @@ import Home from './Home'
 import New from './New'
 import Collection from './Collection'
 import Products from './Products'
+import Brands from './Brands'
+import Footer from './Footer'
 
 import classes from '../assets/styles/Main.module.css'
 
@@ -20,6 +22,8 @@ function Main() {
             <New/>
             <Collection/>
             <Products/>
+            <Brands/>
+            <Footer/>
         </div>
     )
 }

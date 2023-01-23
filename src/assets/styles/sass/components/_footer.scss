@@ -1,0 +1,96 @@
+@use '../variables/colors' as *;
+
+.footer {
+    padding-bottom: 2rem;
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        & > div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+        ul {
+            li {
+                &:hover {
+                    color: $title-color;
+                }
+                transition: 300ms;
+                cursor: pointer;
+                color: $text-color-light;
+                padding-block: .2rem;
+            }
+        }
+        .introduction {
+            max-width: 10rem;
+            .logo_wrapper {
+                display: flex;
+                align-items: center;
+                column-gap: 0.3rem;
+                img {
+                    width: auto;
+                    background-color: black;
+                    width: 25px;
+                }
+            }
+            p {
+                color: $text-color-light;
+                width: 15rem;
+            }
+        }
+        .socials {
+            ul {
+                display: flex;
+                column-gap: 2rem;
+            }
+        }
+        .office {
+            ul {
+                li:hover {
+                    color: $text-color-light;
+                    cursor: auto;
+                }
+            }
+        }
+    }
+    .rights {
+        text-align: center;
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        .footer_container {
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            justify-items: right;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        .rights {
+            padding-bottom: 7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        .footer_container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        .footer_container {
+            grid-template-columns: 1fr;
+        }
+    }
+}
