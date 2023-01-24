@@ -2,6 +2,7 @@
 
 .collection {
     background-color: $bg_color;
+    padding-block: 4rem;
     .collection_container {
         display: grid;
         justify-items: center;
@@ -37,6 +38,7 @@
 
 @media screen and (min-width: 650px) {
     .collection {
+        padding-block: 3rem;
         .collection_container {
             position: relative;
             column-gap: 2rem;
@@ -58,7 +60,7 @@
             }
             .women_collection {
                 grid-template-columns: max-content 230px;
-                top: 0;
+                top: 1rem;
             }
             .collection_text {
                 h2 {

@@ -2,7 +2,7 @@
 
 .home {
     background-color: $bg-color;
-    padding-bottom: 5rem;
+    padding-bottom: 7rem;
     .home_container {
         max-width: 400px;
         margin: auto;
@@ -42,7 +42,6 @@
 
 @media screen and (min-width: 900px) {
     .home {
-        padding-bottom: 12rem;
         .home_container {
             .home_text {
                 h1 {
@@ -55,8 +54,7 @@
 
 @media screen and (min-width: 780px) {
     .home {
-        padding-bottom: 12rem;
-        min-height: 100vh;
+        padding-bottom: 12.5rem;
         .home_container {
             max-width: 800px;
             display: flex;

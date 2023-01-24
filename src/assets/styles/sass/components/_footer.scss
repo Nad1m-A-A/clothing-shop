@@ -2,6 +2,7 @@
 
 .footer {
     padding-bottom: 2rem;
+    padding-top: 4rem;
     .footer_container {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -42,7 +43,7 @@
         .socials {
             ul {
                 display: flex;
-                column-gap: 2rem;
+                column-gap: 1rem;
             }
         }
         .office {
@@ -62,6 +63,7 @@
 
 @media screen and (max-width: 850px) {
     .footer {
+        padding-inline: 3rem;
         .footer_container {
             margin: 0 auto;
             grid-template-columns: repeat(3, 1fr);
